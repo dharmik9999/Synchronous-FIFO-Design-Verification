@@ -3,7 +3,9 @@
 A parameterized, single-clock synchronous FIFO implemented in synthesizable Verilog-2005, with a SystemVerilog testbench and reproducible PowerShell workflows. This project is a synchronous FIFO; it does not implement asynchronous FIFO clock-domain crossing.
 
 ## Design summary
+## Architecture Overview
 
+See the [FIFO architecture block diagram](docs/ARCHITECTURE.md) for the design structure, control logic, and data flow.
 Default configuration is 8-bit data and 16 entries. `DATA_WIDTH` and `DEPTH` are parameters; the documented contract includes depth one and non-power-of-two depths. The design uses bounded circular read/write pointers, an occupancy counter, registered read data, and per-edge overflow/underflow flags.
 
 Reset is active-low and synchronous. Requests are evaluated using occupancy immediately before each rising edge. A read at empty is rejected; a write at empty is accepted even when read is also requested. At full, simultaneous read and write return the old oldest word and accept the replacement write. `dout` holds its previous value when no read is accepted.
