@@ -1,0 +1,38 @@
+# Generated simulation and waveform outputs
+*.vvp
+*.vcd
+*.fst
+*.lxt
+*.lxt2
+*.ghw
+obj_dir/
+work/
+transcript
+transcript.log
+*.wlf
+modelsim.ini
+
+# Generated workflow evidence and synthesis products
+/results/tools/
+/results/suite/
+/results/regression/
+/results/waveform/
+/results/lint/
+/results/synthesis/
+/results/tmp/
+/results/validation/
+/reports/generated/
+/waveforms/generated/
+
+# Physical-design flow outputs (if a flow is added later)
+physical_design/runs/
+physical_design/results/
+
+# Python and editor/OS files
+__pycache__/
+*.py[cod]
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+

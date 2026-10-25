@@ -1,0 +1,41 @@
+﻿{
+    "Started":  "2026-10-20T13:44:23.1195763+05:30",
+    "Completed":  "2026-10-20T13:46:33.2693134+05:30",
+    "Steps":  [
+                  {
+                      "Script":  "check_tools.ps1",
+                      "ExitCode":  0,
+                      "Status":  "PASS"
+                  },
+                  {
+                      "Script":  "run_lint.ps1",
+                      "ExitCode":  0,
+                      "Status":  "PASS"
+                  },
+                  {
+                      "Script":  "run_simulations.ps1",
+                      "ExitCode":  0,
+                      "Status":  "PASS"
+                  },
+                  {
+                      "Script":  "run_regression.ps1",
+                      "ExitCode":  0,
+                      "Status":  "PASS"
+                  },
+                  {
+                      "Script":  "generate_waveforms.ps1",
+                      "ExitCode":  0,
+                      "Status":  "PASS"
+                  },
+                  {
+                      "Script":  "run_synthesis.ps1",
+                      "ExitCode":  0,
+                      "Status":  "PASS"
+                  },
+                  {
+                      "Script":  "write_summary.ps1",
+                      "ExitCode":  0,
+                      "Status":  "PASS"
+                  }
+              ]
+}
